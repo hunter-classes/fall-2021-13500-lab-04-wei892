@@ -4,11 +4,6 @@
 * First name: Wei Lin Li
 * GitHub username: wei892
 * Notes:
-Hi Professor Zamansky,
-I am having trouble running my files for this lab. I tried running make and it says that the there is an undefined reference to std::... I have looked over my codes several times but I do not understand what is causing this issue. I will talk to you after class on Monday.
-Thank you, 
-Wei Lin Li
-
 * General instructions:
 - Fill in your name and GitHub username on top.
 - Use the Notes section to add any notes to the instructor.
