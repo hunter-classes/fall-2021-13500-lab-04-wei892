@@ -1,4 +1,13 @@
+/*
+Name: Wei Lin Li
+Course: CSCI-135
+Instructor: Tong Yi and Mike Zamansky
+Assignment: Lab4 part F
 
+this lap will print an updside down trapezoid based on given width and height
+if the height is too large compared to its width, it'll print out impossible shape
+
+*/
 
 #include <iostream>
 #include "functions.h"

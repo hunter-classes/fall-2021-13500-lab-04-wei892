@@ -1,3 +1,14 @@
+/*
+Name: Wei Lin Li
+Course: CSCI-135
+Instructor: Tong Yi and Mike Zamansky
+Assignment: Lab4 part g
+
+this program will print a checkerboard with 3by3 squares
+based on the width and height given
+
+*/
+
 #include <iostream>
 #include "functions.h"
 

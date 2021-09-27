@@ -4,6 +4,8 @@ Course: CSCI-135
 Instructor: Tong Yi and Mike Zamansky
 Assignment: Lab4 part b 
 
+this program should make a checkerboard with * and spaces based on the
+width and height it recieves
 */
 
 #include <iostream>

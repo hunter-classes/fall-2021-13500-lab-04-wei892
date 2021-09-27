@@ -2,7 +2,9 @@
 Name: Wei Lin Li
 Course: CSCI-135
 Instructor: Tong Yi and Mike Zamansky
-Assignment: Lab
+Assignment: Lab4 Part a
+
+this program should take a width and height and print a solid box using *
 
 */
 
