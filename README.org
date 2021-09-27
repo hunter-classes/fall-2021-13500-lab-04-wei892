@@ -3,9 +3,11 @@
 * Last name: Li
 * First name: Wei Lin Li
 * GitHub username: wei892
-* Notes:
-
-
+* Notes::
+Hi Professor Zamansky,
+I am having trouble running my files for this la
+Hi Professor Zamnansky,
+I am having a bit of trouble running my fi
 
 * General instructions:
 - Fill in your name and GitHub username on top.
