@@ -12,7 +12,7 @@ if the height is too large compared to its width, it'll print out impossible sha
 #include <iostream>
 #include "functions.h"
 
-std::string trapezoid.cpp(int w, int h)
+std::string trapezoid(int w, int h)
 {
   /*
   int h;

@@ -21,7 +21,7 @@ std::string checkerboard3x3(int w, int h)
   std::string shape = "Shape:\n";
   for(int i = 0; i < h; i++)
     {
-      for(int j = 0; j < w; col++)
+      for(int j = 0; j < w; j++)
 	{
 	  if((j/3 % 2 != 0) && (i/3 % 2 == 0))
 	    {

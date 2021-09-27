@@ -11,7 +11,7 @@ based on the side length
 #include <iostream>
 #include "functions.h"
 
-std::string lowerTraingle(int l)
+std::string lowerTriangle(int l)
 {
   /* 
      std::cout << "Input side length" << l << std::endl;

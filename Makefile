@@ -1,6 +1,6 @@
 
-main: main.o box.o checkerboard.o cross.o lowertriangle.o upper.o trapezoid.o checkerboard.o
-	g++ -o main main.o box.o checkerboard.o cross.o lowertriangle.o upper.o trapezoid.o checkerboard.o
+main: main.o box.o checkerboard.o cross.o lowertriangle.o upper.o trapezoid.o checkerboard3x3.o
+	g++ -o main main.o box.o checkerboard.o cross.o lowertriangle.o upper.o trapezoid.o checkerboard3x3.o
 
 main.o: main.cpp functions.h
 	g++ -c main.cpp
@@ -24,7 +24,7 @@ trapezoid.o: trapezoid.cpp functions.h
 	g++ -c trapezoid.cpp
 
 checkerboard3x3.o: checkerboard3x3.cpp functions.h
-	g++ -c trapezoid.cpp
+	g++ -c checkerboard3x3.cpp
 
 
 clean:

@@ -30,5 +30,5 @@ std::string box(int w, int h)
       output += "\n";
     }
   
-  std::cout << output;
+  return output;
 }
