@@ -1,6 +1,6 @@
 
-main: main.o box.o checkerboard.o cross.o
-	g++ -o main main.o box.o checkerboard.o cross.o
+main: main.o box.o checkerboard.o cross.o lowertriangle.o
+	g++ -o main main.o box.o checkerboard.o cross.o lowertriangle.o
 
 main.o: main.cpp functions.h
 	g++ -c main.cpp
@@ -14,5 +14,8 @@ checkerboard.o: checkerboard.cpp functions.h
 cross.o: cross.cpp functions.h
 	g++ -c cross.cpp
 
+lowertriangle.o: lowertriangle.cpp functions.h
+	g++ -c lowertriangle.cpp
+
 clean:
-	rm -f main.o box.o checkerboard.o cross.o
+	rm -f main.o box.o checkerboard.o cross.o lowertriangle.o

@@ -11,3 +11,4 @@ Assignment: Lab
 std::string box(int w, int h);
 std::string checkerboard(int w, int h);
 std::string cross(int size);
+std::string lowerTriangle(int l);
