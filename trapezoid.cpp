@@ -32,6 +32,14 @@ std::string trapezoid.cpp(int w, int h)
       shape += "\n";
     }
 
-  return shape;
+  int s = w; //holder variable
+  if (w - (s/2) < h)
+    {
+      return "Impossible shape!";
+    }
+  else
+    {
+      return shape;
+    }
 
 }
