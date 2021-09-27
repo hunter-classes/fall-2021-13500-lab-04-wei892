@@ -8,13 +8,15 @@ Assignment: Lab
 
 #include <iostream>
 #include "functions.h"
+#include <string>
 
 std::string box(int w, int h)
 {
-  
+  /*
   std::cout << "Input width: " << w << "\n";
   std::cout << "Input height: " << h << "\n";
   std::cout << "Shape" << "\n";
+  */
   
   std::string output = "";
   for (int i = 0; i < h; i++)
@@ -25,5 +27,6 @@ std::string box(int w, int h)
 	}
       output += "\n";
     }
-  return output;
+  
+  std::cout << output;
 }
