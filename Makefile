@@ -28,4 +28,4 @@ checkerboard3x3.o: checkerboard3x3.cpp functions.h
 
 
 clean:
-	rm -f main.o box.o checkerboard.o cross.o lowertriangle.o
+	rm -f main.o box.o checkerboard.o cross.o lower.o upper.o trapezoid.o checkerboard3x3.o
