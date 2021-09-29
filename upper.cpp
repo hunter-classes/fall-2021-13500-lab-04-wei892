@@ -6,16 +6,14 @@ Assignment: Lab4 part e
 
 this program will print the top right half of a square based on the side length
 
- */
+*/
 
 #include <iostream>
 #include "functions.h"
 
 std::string upper(int l)
 {
-  /*
-    std::cout << "Input side length" << l << std::endl;
-  */
+  std::string detail = "Input side length: " + std::to_string(l) + "\n\n";
 
   std::string shape = "Shape:\n";
 
@@ -34,6 +32,6 @@ std::string upper(int l)
 	}
       shape += "\n";
     }
-  return shape;
+  return detail + shape;
 
 }

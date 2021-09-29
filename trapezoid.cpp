@@ -12,21 +12,17 @@ if the height is too large compared to its width, it'll print out impossible sha
 #include <iostream>
 #include "functions.h"
 
-std::string trapezoid(int w, int h)
+std::string trapezoid (int w, int h)
 {
-  /*
-  int h;
-  int w;
-  std::cin >> w;
-  std::cin >> h;
-  std::cout << "Input side length" << l << std::endl;
-  */
 
+  std::string detail = "Input width: " + std::to_string(w) +
+    "\nInput height: " + std::to_string(h) + "\n\n";
+
+  int s = w; //holder variable
   std::string shape = "Shape:\n";
-
   for (int i = 0; i < h; i++)
     {
-      for (int j = 0; j < w; j++)
+      for (int j = 0; j < s; j++)
 	{
 	  if (j < i)
 	    {
@@ -37,18 +33,17 @@ std::string trapezoid(int w, int h)
 	      shape += "*";
 	    }
 	}
-      w--;
+      s--;
       shape += "\n";
     }
 
-  int s = w; //holder variable
-  if (w - (s/2) < h)
+  if (w-(w/2) < h) //if h is greater than half of the width
     {
       return "Impossible shape!";
     }
   else
     {
-      return shape;
+      return detail + shape;
     }
 
 }

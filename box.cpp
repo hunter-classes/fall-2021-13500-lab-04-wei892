@@ -2,25 +2,34 @@
 Name: Wei Lin Li
 Course: CSCI-135
 Instructor: Tong Yi and Mike Zamansky
-Assignment: Lab4 Part a
+Assignment: Lab 4 
 
-this program should take a width and height and print a solid box using *
+this is the box function
+it will take in 
+a Width
+and a height 
+and then return a box made of * based on the values
 
 */
 
+
 #include <iostream>
 #include "functions.h"
-#include <string>
 
-std::string box(int w, int h)
+std::string box (int w, int h)
 {
-  /*
-  std::cout << "Input width: " << w << "\n";
-  std::cout << "Input height: " << h << "\n";
-  std::cout << "Shape" << "\n";
-  */
-  
-  std::string output = "";
+  //int w;
+  //int h;
+  //std::cout << "Input Width: 7" << std::endl;
+
+  //std::cin >> w;
+  //std::cin >> h;
+
+  std::string inputs =  "Input width: " + std::to_string (w) +
+    "\nInput height: " + std::to_string (h) + "\n\n";
+  //std::cout << inputs << std::endl;
+
+  std::string output = "Shapes:\n";
   for (int i = 0; i < h; i++)
     {
       for (int j = 0; j < w; j++)
@@ -29,6 +38,6 @@ std::string box(int w, int h)
 	}
       output += "\n";
     }
-  
-  return output;
+
+  return inputs + output;
 }

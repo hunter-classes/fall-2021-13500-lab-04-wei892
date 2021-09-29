@@ -14,10 +14,9 @@ based on the width and height given
 
 std::string checkerboard3x3(int w, int h)
 {
-  /*
-    std::cout << "Input side length" << l << std::endl;
-  */
-  
+  std::string detail = "Input width: " + std::to_string(w) +
+    "\nInput height: " + std::to_string(h) + "\n\n";
+
   std::string shape = "Shape:\n";
   for(int i = 0; i < h; i++)
     {
@@ -36,6 +35,7 @@ std::string checkerboard3x3(int w, int h)
 	      shape += "*";
 	    }
 	}
+      shape += "\n";
     }
-  return shape;
+  return detail + shape;
 }

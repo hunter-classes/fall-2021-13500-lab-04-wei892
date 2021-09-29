@@ -6,16 +6,15 @@ Assignment: Lab4 part d
 
 this program with print the bottom left half of a square
 based on the side length
- */
+*/
 
 #include <iostream>
 #include "functions.h"
 
-std::string lowerTriangle(int l)
+std::string lower(int l)
 {
-  /* 
-     std::cout << "Input side length" << l << std::endl;
-  */
+  std::string detail = "Input side length: " + std::to_string (l) +
+    "\n\n";
   std::string shape = "Shape:";
 
   for (int i = 0; i <= l; i++)
@@ -26,6 +25,5 @@ std::string lowerTriangle(int l)
 	}
       shape += "\n";
     }
-  return shape;
-
+  return detail + shape;
 }

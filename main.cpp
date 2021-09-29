@@ -2,117 +2,160 @@
 Name: Wei Lin Li
 Course: CSCI-135
 Instructor: Tong Yi and Mike Zamansky
-Assignment: Lab
+Assignment: Lab 4 
 
-this is the main file where all the functions will 
-be called to accomplish the task
+this is the main program that will run the functions
+
 */
+
 
 #include <iostream>
 #include "functions.h"
 
-int main()
+int
+main ()
 {
-  //testing the box function
+  //test for box
+  //test one
   std::string resultBox;
-  std::cout << "Input Width: 7" << std::endl;
-  std::cout << "Input height: 5" << std::endl;
-  resultBox = box(7, 5);
+  resultBox = box (3, 5);
+  std::cout << "box(3, 5):\n";
   std::cout << resultBox;
+  std::cout << "\n------------------\n\n";// seperator
 
-  std::cout << "\n" << "Input Width: 3" << std::endl;
-  std::cout << "Input height: 3" << std::endl;
-  resultBox = box(3, 3);
+  //test two
+  resultBox = box (7, 4);
+  std::cout << "box(7, 4):\n";
   std::cout << resultBox;
+  std::cout << "\n------------------\n\n";// seperator
 
-  std::cout << "\n" << "Input Width: 4" << std::endl;
-  std::cout << "Input height: 7" << std::endl;
-  resultBox = box(4, 7);
+  //test three
+  resultBox = box (23, 5);
+  std::cout << "box(23, 5):\n";
   std::cout << resultBox;
-  
-  //testing checkerboard function
-  std::string testChecker;
+  std::cout << "\n------------------\n\n";// seperator
 
-  std::cout << "\n" << "Input width: 11 " << std::endl;
-  std::cout << "Intput height: 6" << std::endl;
-  testChecker = checkerboard(11, 6);
+  //test for checkerboard
+  //test one
+  std::string resultCheckerboard;
+  std::cout << "checkerboard(23, 5):\n";
+  resultCheckerboard = checkerboard(11, 6);
+  std::cout << resultCheckerboard;
+  std::cout << "\n------------------\n\n";// seperator
 
-  std::cout << "Input width: 10" << std::endl;
-  std::cout << "Intput height: 9" << std::endl;
-  testChecker = checkerboard(10, 9);
+  //test two
+  resultCheckerboard = checkerboard(7, 4);
+  std::cout << "checkerboard(7, 4):\n";
+  std::cout << resultCheckerboard;
+  std::cout << "\n------------------\n\n";// seperator
 
-  std::cout << "Input width: 4 " << std::endl;
-  std::cout << "Intput height: 3" << std::endl;
-  testChecker = checkerboard(4, 3);
+  //test three
+  resultCheckerboard = checkerboard(3, 2);
+  std::cout << "checkerboard(3, 2):\n";
+  std::cout << resultCheckerboard;
+  std::cout << "\n------------------\n\n";// seperator
 
-  //testing cross
-  std::string testCross;
+  std::string resultCross;
+  //tests for cross
+  //test one
+  resultCross = cross(8);
+  std::cout << "cross(8):" << std::endl;
+  std::cout << resultCross;
+  std::cout << "\n------------------\n\n";//seperator
 
-  std::cout << "\n" << "Input size: 18 " << std::endl;
-  testCross = cross(18);
+  //test two
+  resultCross = cross(7);
+  std::cout << "cross(7):" << std::endl;
+  std::cout << resultCross;
+  std::cout << "\n------------------\n\n";//seperator
 
-  std::cout << "\n" << "Input size: 10" << std::endl;
-  testCross = cross(5);
+  //test three
+  resultCross = cross(13);
+  std::cout << "cross(13):" << std::endl;
+  std::cout << resultCross;
+  std::cout << "\n------------------\n\n";//seperator
 
-  std::cout << "\n" << "Input size: 4 " << std::endl;
-  testCross = cross(4);
 
-  //testing lower triangle
-  std::string testLow;
+  //test for lower triangle
+  std::string resultLower;
 
-  std::cout << "\n" << "Input side: 18 " << std::endl;
-  testLow = lowerTriangle(6);
+  //test one
+  resultLower = lower(6);
+  std::cout << "lower(6):" << std::endl;
+  std::cout <<  resultLower;
+  std::cout << "\n------------------\n\n";//seperator
 
-  std::cout << "\n" << "Input side: 10" << std::endl;
-  testLow = lowerTriangle(10);
+  //test two
+  resultLower = lower(8);
+  std::cout << "lower(8):" << std::endl;
+  std::cout <<  resultLower;
+  std::cout << "\n------------------\n\n";//seperator
 
-  std::cout << "\n" << "Input side: 4 " << std::endl;
-  testLow = lowerTriangle(4);
+  //test three
+  resultLower = lower(11);
+  std::cout << "lower(11):" << std::endl;
+  std::cout <<  resultLower;
+  std::cout << "\n------------------\n\n";//seperator
 
-  //testing upper triangle
-  std::string testUpper;
+  //test for upper
+  std::string resultUpper;
+  //test one
+  resultUpper = upper(5);
+  std::cout << "upper(5): " << std::endl;
+  std::cout << resultUpper;
+  std::cout << "\n------------------\n\n";//seperator
 
-  std::cout << "\n" << "Input side: 18 " << std::endl;
-  testUpper = upper(5);
+  //test two
+  resultUpper = upper(7);
+  std::cout << "upper(7): " << std::endl;
+  std::cout << resultUpper;
+  std::cout << "\n------------------\n\n";//seperator
 
-  std::cout << "\n" << "Input side: 10" << std::endl;
-  testUpper = upper(10);
+  //test three
+  resultUpper = upper(10);
+  std::cout << "upper(10): " << std::endl;
+  std::cout << resultUpper;
+  std::cout << "\n------------------\n\n";//seperator
 
-  std::cout << "\n" << "Input side: 4 " << std::endl;
-  testUpper = upper(4);
+  //test for trapezoid
+  std::string resultTrape;
+  //test one
+  resultTrape = trapezoid(12, 5);
+  std::cout << "trapezoid(12, 5): " << std::endl;
+  std::cout <<  resultTrape;
+  std::cout << "\n------------------\n\n";//seperator
 
-  //testing upside down trapezoid
-  std::string testTrape;
+  //test two
+  resultTrape = trapezoid(5, 3);
+  std::cout << "trapezoid(5, 3): " << std::endl;
+  std::cout <<  resultTrape;
+  std::cout << "\n------------------\n\n";//seperator
 
-  std::cout << "\n" << "Input width: 12 " << std::endl;
-  std::cout << "Input height: 5" << std::endl;
-  testTrape = trapezoid(12, 5);
+  //test three
+  resultTrape = trapezoid(12, 7);
+  std::cout << "trapezoid(12, 7): " << std::endl;
+  std::cout <<  resultTrape;
+  std::cout << "\n------------------\n\n";//seperator
 
-  std::cout << "\n" << "Input width: 5" << std::endl;
-  std::cout << "Input height: 3" << std::endl;
-  testTrape = trapezoid(5, 3);
+  //test for checkerboard3x3
+  std::string resultCheck3x3;
+  //test one
+  resultCheck3x3 = checkerboard3x3(16, 11);
+  std::cout << "checkerboard3x3(16, 11):" << std::endl;
+  std::cout << resultCheck3x3;
+  std::cout << "\n------------------\n\n";//seperator
 
-  std::cout << "\n" << "Input width: 12" << std::endl;
-  std::cout << "Input height: 7" << std::endl;
-  std::cout << "This test should return impossible shape" << std::endl;
-  testTrape = trapezoid(12, 7);
+  //test two
+  resultCheck3x3 = checkerboard3x3(27, 27);
+  std::cout << "checkerboard3x3(27, 27):" << std::endl;
+  std::cout << resultCheck3x3;
+  std::cout << "\n------------------\n\n";//seperato
 
-  //testing upside down trapezoid
-  std::string test3x3;
-
-  std::cout << "\n" << "Input width: 16 " << std::endl;
-  std::cout << "Input height: 11" << std::endl;
-  test3x3 = checkerboard3x3(16, 11);
-
-  std::cout << "\n" << "Input width: 27" << std::endl;
-  std::cout << "Input height: 27" << std::endl;
-  test3x3 = checkerboard3x3(27, 27);
-
-  std::cout << "\n" << "Input width: 12" << std::endl;
-  std::cout << "Input height: 7" << std::endl;
-  test3x3 = checkerboard3x3(12, 7);
-  
-
+  //test three
+  resultCheck3x3 = checkerboard3x3(5, 7);
+  std::cout << "checkerboard3x3(5, 7):" << std::endl;
+  std::cout << resultCheck3x3;
+  std::cout << "\n------------------\n\n";//seperato
 
   return 0;
 }

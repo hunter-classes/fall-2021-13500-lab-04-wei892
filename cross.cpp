@@ -1,27 +1,28 @@
 /*
-Name Wei Lin Li
+Name: Wei Lin Li
 Course: CSCI-135
 Instructor: Tong Yi and Mike Zamansky
-Assignment: Lab4 Part C
+Assignment: Lab 4 
 
-this program will print a diagional cross based on the size it receives
+this program is the cross functions
+it will take in a number and print a diagonal cross
+
 */
 
 #include <iostream>
+#include "functions.h"
 
-std::string cross(int size)
+std::string cross(int s)
 {
-  /*
-    std::cout << "Input size: " << size << std::endl;
-   */
+  std::string detail = "Input size: " + std::to_string(s) + "\n\n";
 
   std::string shape = "Shape: \n";
 
-  for (int i = 0; i < size; i++)
+  for (int i = 0; i < s; i++)
     {
-      for (int j = 0; j < size; j++)
+      for (int j = 0; j < s; j++)
 	{
-	  if (j == i || size-(j+1)== i)
+	  if (j == i || s-(j+1)== i)
 	    {
 
 	      shape += "*";
@@ -33,6 +34,5 @@ std::string cross(int size)
 	}
       shape += "\n";
     }
-  return shape;
-  
+  return detail + shape;
 }
